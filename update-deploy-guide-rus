@@ -5,7 +5,9 @@
 * Коммитим на гитхаб
 * делаем инсталл:
 $ mvn clean install
-* пробуем сгенерировать проект из архетипа, убеждаемся, что все работает корректно
+* пробуем сгенерировать проект из архетипа:
+$ mvn archetype:generate -DarchetypeGroupId=scage -DarchetypeArtifactId=project-archetype -DarchetypeVersion=11.3 -DarchetypeRepository=https://raw.github.com/dunnololda/mvn-repo/master
+* убеждаемся, что все работает корректно
 * делаем деплой:
 $ mvn deploy
 
