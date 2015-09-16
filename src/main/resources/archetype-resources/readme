@@ -54,6 +54,6 @@ Native opengl libs are also shipped as a jar file src/main/jnlp/resources/native
 To do this open src/main/jnlp/resources/natives/lwjgl-natives.jar using any zip-archiver. Remove the files MY_KEYST.DSA and MY_KEYST.SF
 from the META-INF folder. Then execute:
 
-  $ jarsigner natives.jar <alias> -keystore /path/to/keystore
+  $ jarsigner lwjgl-natives.jar <alias> -keystore /path/to/keystore
 
 The file will be signed by your certificate and then you can use it to deploy your app via WebStart.

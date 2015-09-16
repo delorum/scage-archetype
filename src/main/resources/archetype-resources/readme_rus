@@ -45,6 +45,6 @@ key.pass = <password>
 
 Для этого откройте файл src/main/jnlp/resources/natives/lwjgl-natives.jar любым zip-архиватором и в папке META-INF
 удалите файлы MY_KEYST.DSA и MY_KEYST.SF, после чего выполните:
-jarsigner natives.jar <alias> -keystore /path/to/keystore
+jarsigner lwjgl-natives.jar <alias> -keystore /path/to/keystore
 
 Файл будет подписан вашим сертификатом, и его можно будет использовать для выкладывания приложения через WebStart.
